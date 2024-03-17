@@ -247,7 +247,7 @@ namespace FlipbookMaker.Frontend.Viewmodels
                     ColumnNumber = ColumnNumber,
                 };
 
-                string ss = System.Text.Json.JsonSerializer.Serialize(this);
+                string ss = System.Text.Json.JsonSerializer.Serialize(cache);
                 var path = Path.ChangeExtension(diag.FileName, "fcache");
                 File.WriteAllText(path, ss);
             }

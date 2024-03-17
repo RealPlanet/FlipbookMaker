@@ -12,7 +12,7 @@ namespace FlipbookMaker.Backend
         public void CreateFlipbookImage(IList<FlipbookFrame> frames, int columns, int frameSize, string resultFilePath)
         {
             int numOfFrames = frames.Count;
-            int rowNumber = (int)(frames.Count / ((float)columns) + 1);
+            int rowNumber = (int)((frames.Count + 1) / ((float)columns));
             using Image result = new Image<Rgba32>(frameSize * columns, frameSize * rowNumber);
             result.Mutate(o => o.Clear(new SolidBrush(Color.Transparent)));
 
