@@ -1,7 +1,7 @@
 # FlipbookMaker
 A tool to create flibook sprite animations made entirely in C# NET7.0
 
-This tool was inspired by [GlueiT](https://github.com/Kavex/GlueIT), I simply wanted to remake it in WPF for fun.
+This tool was inspired by [GlueIT](https://github.com/Kavex/GlueIT), I simply wanted to remake it in WPF for fun.
 
 # Features
 	- Add individual frames and preview them in-editor
