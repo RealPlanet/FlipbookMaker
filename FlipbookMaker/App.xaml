@@ -1,0 +1,13 @@
+﻿<Application x:Class="FlipbookMaker.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FlipbookMaker"
+             xmlns:data="clr-namespace:FlipbookMaker.Data"
+             xmlns:fe="clr-namespace:FlipbookMaker.Frontend.ListItems"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type data:FlipbookFrame}">
+            <fe:FrameListviewItem />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
